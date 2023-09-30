@@ -18,7 +18,7 @@ body {
     color: var(--ultra-light);
 }
 .App {
-    padding: 100px 200px;
+    padding: 100px;
 }
 .App h1 {
     font-size: 30px;
@@ -34,13 +34,19 @@ body {
     align-items: center;
     border-radius: 20px;
     background-color: var(--secondary);
-    padding: 15px;
+    /* padding: 15px; */
     transition: .5s;
     margin: 15px 0;
     position: relative;
 }
 .todo:hover {
     background-color:#183d3dbc;
+}
+.todo-content {
+    display: flex;
+    width: 85%;
+    padding: 15px;
+    border-radius: 10px;
 }
 .checkbox {
     width: 25px;
@@ -66,9 +72,11 @@ body {
     right: 15px;
     background-color: red;
     color: #fff;
-    width: 25px;
-    height: 25px;
-    text-align: center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50px;
     font-size: large;
     cursor: pointer;
@@ -93,7 +101,7 @@ body {
 .popup {
     width: 100%;
     position: fixed;
-    top: 50vh;
+    top: 30vh;
     display: flex;
     justify-content: center;
     right: 0;
@@ -126,8 +134,12 @@ body {
     border-radius: 10px;
     outline: none;
 }
+.popup button:hover {
+    opacity: .7;
+}
 .popup .closePopup {
     position: absolute;
     right: 15px;
     top: 17px;
+    cursor: pointer;
 }
